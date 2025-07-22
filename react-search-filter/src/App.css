@@ -4,38 +4,48 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.title{color: lightcoral;
+    font-weight: bold;}
+.text-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.card{
+  /* padding: 1rem; */
+  border: none;
+  box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+  overflow: hidden;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.recipe .card:hover{ border: 1px solid lightcoral;}
+.searchcontainer{background-color: #e77b7b;}
+#search{
+  width: 40dvw;
+  outline: none;
+    border: 2px solid;
+    border-color: #e3e0e0 !important;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-title{
+  color: lightcoral;
+    font-weight: bold;
 }
-
+.recipe-top{
+    background-color: lightcoral;
+    color: white;
+    padding: 2em;
+    border-radius: 2em;
+    min-width: 50dvw;
+}
+.btn-view{    background-color: lightcoral;
+    border-color: lightcoral;color: white;}
+.btn-view:hover{background-color: lightcoral;
+    border-color: lightcoral;
+    color: white;
+    font-weight: bold;}
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
